@@ -11,9 +11,18 @@ public class UserController {
 
 	// 회원가입 페이지로 이동
 	@RequestMapping("/user/inert.do")
-	public String inert(){
-		logger.info("경로 : inert
+	public String insert(){
+		logger.info("경로 : insert");
 
-		return "user/inert";
+		return "user/insert";
+	}
+
+
+	// 회원수정 페이지로 이동
+	@RequestMapping("/user/update.do")
+	public String update(){
+		logger.info("경로 : update");
+
+		return "user/update";
 	}
 }
